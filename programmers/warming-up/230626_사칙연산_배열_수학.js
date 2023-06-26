@@ -53,6 +53,7 @@ const getMode = (array) => {
  */
 const getOdd = (n) => {
     const array = [];
+    // => 추가 풀이 : for문을 돌릴 때는 반드시 +1씩 하라는 법은 없다!
     for(let i = 0 ; i <= n ; i++){
         if(i%2 !== 0) array.push(i);
     }
