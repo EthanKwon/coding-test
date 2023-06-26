@@ -7,7 +7,7 @@
  * @param {number} num2 
  * @returns 
  */
-const getReminder = (num1, num2) => num1 % num2;
+export const getReminder = (num1, num2) => num1 % num2;
 
 
 /**
@@ -16,7 +16,7 @@ const getReminder = (num1, num2) => num1 % num2;
  * @param {Array<number>} array 
  * @returns 
  */
-const getMediun = (array) => array.sort((a,b) => a-b)[Math.trunc(array.length/2)];
+export const getMediun = (array) => array.sort((a,b) => a-b)[Math.trunc(array.length/2)];
 
 
 /**
@@ -25,7 +25,7 @@ const getMediun = (array) => array.sort((a,b) => a-b)[Math.trunc(array.length/2)
  * @param {Array<number>} array 
  * @returns 
  */
-const getMode = (array) => {
+export const getMode = (array) => {
     //Num의 개수 세기
     const numMap = array.reduce((map, num)=> {
         const count = map.get(num) ?? 0;
@@ -51,7 +51,7 @@ const getMode = (array) => {
  * @param {number} n 
  * @returns 
  */
-const getOdd = (n) => {
+export const getOdd = (n) => {
     const array = [];
     // => 추가 풀이 : for문을 돌릴 때는 반드시 +1씩 하라는 법은 없다!
     for(let i = 0 ; i <= n ; i++){
